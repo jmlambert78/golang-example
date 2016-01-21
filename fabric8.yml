@@ -1,9 +1,8 @@
 ---
-pipeline: "workflows/golang/CanaryReleaseStageAndApprovePromote/Jenkinsfile"
-buildName: "golang-example2"
+buildName: "golang-example3"
 codeReview: false
 links:
-  Job: "http://jenkins.jml.10.10.163.6.xip.io/job/golang-example2"
+  Job: "http://jenkins.jml.10.10.163.6.xip.io/job/golang-example3"
   Production: "http://fabric8.jml.10.10.163.6.xip.io/kubernetes/pods?namespace=golang-example2-production"
   Room: "http://letschat.jml.10.10.163.6.xip.io/#!/room/569fdae5adf0021500b60a8c"
   Staging: "http://fabric8.jml.10.10.163.6.xip.io/kubernetes/pods?namespace=golang-example2-staging"
