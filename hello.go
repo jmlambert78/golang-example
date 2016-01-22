@@ -1,12 +1,19 @@
 package main
 
 import (
-    "fmt"
-    "net/http"
+	"fmt"
+	"log"
+	"net/http"
+	"os"
+	"strings"
 )
 
-func handler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "<html><head><title>Greetings to the world</title></head><body><h1>Hello from the fabric8 Golang example, signé furax</h1></body></html>\n")
+func handler(w http.ResponseWriter, req *http.Request) {
+	fmt.Printf("%+v\n", req)
+	fmt.Fprintln(w, strings.Join(os.Environ(), "\n"))
+	if req.URL.Path == "/crash" {
+		os.Exit(1)
+	}
 }
 
 func main() {
