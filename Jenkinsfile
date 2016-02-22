@@ -22,7 +22,7 @@ node ('kubernetes'){
 /*
   stage 'Rolling upgrade Staging'
     kubernetesApply(file: rc, environment: envStage)
-
-}
 */
+}
+
   
