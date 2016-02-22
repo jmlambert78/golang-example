@@ -1,0 +1,11 @@
+---
+pipeline: "workflows/golang/CanaryReleaseStage/Jenkinsfile"
+buildName: "golang-examplenew"
+codeReview: false
+links:
+  Git: "https://github.com/jmlambert78/golang-example"
+  Job: "http://172.30.3.125:80/job/golang-examplenew"
+  Staging: "http://172.30.78.171:80/kubernetes/pods?namespace=golang-examplenew-staging"
+environments:
+  Staging: "golang-examplenew-staging"
+useLocalFlow: true
