@@ -19,8 +19,10 @@ node ('kubernetes'){
       version = newVersion
       imageName = clusterImageName
     }
-
+/*
   stage 'Rolling upgrade Staging'
     kubernetesApply(file: rc, environment: envStage)
 
 }
+*/
+  
