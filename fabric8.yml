@@ -1,9 +1,9 @@
 ---
-buildName: "golang-example-pv"
+buildName: "golang-example-pv2"
 codeReview: false
 links:
   Git: "https://github.com/jmlambert78/golang-example"
-  Job: "http://172.30.36.105:80/job/golang-example-pv"
+  Job: "http://172.30.36.105:80/job/golang-example-pv2"
   Staging: "http://172.30.133.6:80/kubernetes/pods?namespace=golang-example-pv-staging"
 environments:
   Staging: "golang-example-pv-staging"
