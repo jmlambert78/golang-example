@@ -1,5 +1,4 @@
 ---
-pipeline: "workflows/golang/CanaryReleaseStage/Jenkinsfile"
 buildName: "golang-example-pv"
 codeReview: false
 links:
