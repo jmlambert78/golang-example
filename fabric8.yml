@@ -1,0 +1,10 @@
+---
+pipeline: "workflows/golang/CanaryReleaseStage/Jenkinsfile"
+buildName: "toto-golang-example"
+codeReview: false
+links:
+  Git: "https://github.com/jmlambert78/golang-example"
+  Job: "http://172.30.27.198:80/job/toto-golang-example"
+environments:
+  Staging: "toto-golang-example-staging"
+useLocalFlow: true
