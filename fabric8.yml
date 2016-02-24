@@ -1,0 +1,11 @@
+---
+pipeline: "workflows/golang/CanaryReleaseStage/Jenkinsfile"
+buildName: "ansible-golang-example"
+codeReview: false
+links:
+  Git: "https://github.com/jmlambert78/golang-example"
+  Job: "http://172.30.169.250:80/job/ansible-golang-example"
+  Staging: "http://172.30.212.227:80/kubernetes/pods?namespace=ansible-golang-example-staging"
+environments:
+  Staging: "ansible-golang-example-staging"
+useLocalFlow: true
