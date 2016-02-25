@@ -1,10 +1,9 @@
 ---
-pipeline: "workflows/golang/CanaryReleaseStage/Jenkinsfile"
-buildName: "re-golang"
+buildName: "re-golang-example"
 codeReview: false
 links:
   Git: "https://github.com/jmlambert78/golang-example"
-  Job: "http://172.30.176.129:80/job/re-golang"
+  Job: "http://172.30.176.129:80/job/re-golang-example"
   Staging: "http://172.30.76.229:80/kubernetes/pods?namespace=re-golang-staging"
 environments:
   Staging: "re-golang-staging"
