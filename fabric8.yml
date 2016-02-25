@@ -1,9 +1,10 @@
 ---
-buildName: "jml-golang-example"
+buildName: "re-golang"
 codeReview: false
 links:
   Git: "https://github.com/jmlambert78/golang-example"
-  Job: "http://172.30.5.67:80/job/jml-golang-example"
+  Job: "http://172.30.176.129:80/job/re-golang"
+  Staging: "http://172.30.76.229:80/kubernetes/pods?namespace=toto-golang-example-staging"
 environments:
   Staging: "toto-golang-example-staging"
 useLocalFlow: true
