@@ -1,10 +1,10 @@
 ---
-buildName: "re-golang-example"
+buildName: "def-golang-example"
 codeReview: false
 links:
   Git: "https://github.com/jmlambert78/golang-example"
-  Job: "http://172.30.183.42:80/job/re-golang-example"
-  Staging: "http://172.30.238.177:80/kubernetes/pods?namespace=re-golang-staging"
+  Job: "http://172.30.203.227:80/job/def-golang-example"
+  Staging: "http://172.30.58.121:80/kubernetes/pods?namespace=re-golang-staging"
 environments:
   Staging: "re-golang-staging"
 useLocalFlow: true
