@@ -1,10 +1,10 @@
 ---
-buildName: "def-golang-example"
+buildName: "ansible-golang-example"
 codeReview: false
 links:
   Git: "https://github.com/jmlambert78/golang-example"
-  Job: "http://172.30.203.227:80/job/def-golang-example"
-  Staging: "http://172.30.58.121:80/kubernetes/pods?namespace=re-golang-staging"
+  Job: "http://172.30.155.230:80/job/ansible-golang-example"
+  Staging: "http://172.30.227.254:80/kubernetes/pods?namespace=re-golang-staging"
 environments:
   Staging: "re-golang-staging"
 useLocalFlow: true
