@@ -1,0 +1,13 @@
+---
+buildName: "ansible-golang-example"
+codeReview: false
+links:
+  Git: "https://github.com/jmlambert78/golang-example"
+  Job: "http://172.30.155.230:80/job/ansible-golang-example"
+  Production: "http://172.30.227.254:80/kubernetes/pods?namespace=ansible-golang-example-prod"
+  Staging: "http://172.30.227.254:80/kubernetes/pods?namespace=ansible-golang-example-staging"
+  Testing: "http://172.30.227.254:80/kubernetes/pods?namespace=ansible-golang-example-testing"
+environments:
+  Testing: "ansible-golang-example-testing"
+  Staging: "ansible-golang-example-staging"
+  Production: "ansible-golang-example-prod"
