@@ -8,7 +8,7 @@ import (
 )
 
 func handler(w http.ResponseWriter, req *http.Request) {
-	fmt.Printf("%+v\n", req)
+	fmt.Printf(" %+v\n", req)
 	fmt.Fprintln(w, strings.Join(os.Environ(), "\n"))
 	if req.URL.Path == "/crash2" {
 		os.Exit(1)
