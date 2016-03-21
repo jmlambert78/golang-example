@@ -36,7 +36,7 @@ def performCanaryReleasePath(body) {
     def newVersion = getNewVersion{}
 
     env.setProperty('VERSION',newVersion)
-
+println "FROM within the canaryrelease : versionPrefix=${versionPrefix}" 
     kubernetes.image().withName("${env.JOB_NAME}").build().fromPath(".")
     kubernetes.image().withName("${env.JOB_NAME}").tag().inRepository("dockerhub.gemalto.com:8500/${env.KUBERNETES_NAMESPACE}/${env.JOB_NAME}").withTag(newVersion)
     kubernetes.image().withName("dockerhub.gemalto.com:8500/${env.KUBERNETES_NAMESPACE}/${env.JOB_NAME}").push().withTag(newVersion).toRegistry()
