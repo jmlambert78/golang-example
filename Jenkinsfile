@@ -37,8 +37,8 @@ def performCanaryRelease(body) {
     env.setProperty('VERSION',newVersion)
 
     kubernetes.image().withName("${env.JOB_NAME}").build().fromPath(".")
-    kubernetes.image().withName("${env.JOB_NAME}").tag().inRepository("dockerhub.gemalto.com:8500/${env.KUBERNETES_NAMESPACE}/${env.JOB_NAME}").withTag(newVersion)
-    kubernetes.image().withName("${env.FABRIC8_DOCKER_REGISTRY_SERVICE_HOST}:${env.FABRIC8_DOCKER_REGISTRY_SERVICE_PORT}/${env.KUBERNETES_NAMESPACE}/${env.JOB_NAME}").push().withTag(newVersion).toRegistry()
+   println "avant tag" kubernetes.image().withName("${env.JOB_NAME}").tag().inRepository("dockerhub.gemalto.com:8500/${env.KUBERNETES_NAMESPACE}/${env.JOB_NAME}").withTag(newVersion)
+    kubernetes.image().withName("dockerhub.gemalto.com:8500/${env.KUBERNETES_NAMESPACE}/${env.JOB_NAME}").push().withTag(newVersion).toRegistry()
 
     return newVersion
   }
