@@ -19,7 +19,7 @@ node ('kubernetes'){
       version = newVersion
       imageName = clusterImageName
     }
-  println " image = ${imageName}"
+  println " rc = ${rc}"
 
   stage 'Rolling upgrade Staging'
     kubernetesApply(file: rc, environment: envStage)
