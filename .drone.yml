@@ -9,6 +9,7 @@ pipeline:
       - go get
       - go build
       - go test
+      - ls
 
 services:
   postgres:
